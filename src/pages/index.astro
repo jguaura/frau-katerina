@@ -1,24 +1,17 @@
 ---
 import { Image } from "astro:assets";
+import Main from "../layouts/Main.astro";
 const profilePicture = 'https://via.placeholder.com/150x150'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body class="p-4">
-    <div class="flex items-start flex-wrap pt-4 pr-0 pb-3 pl-0">
-      <Image class="rounded-full mt-0 mr-8 mb-4 ml-0" src={profilePicture} alt={'profile pic'} height={100} width={100} format="webp" />
-      <div class="flex-grow flex-shrink-0">
-        <h1>Frau Katerina</h1>
-        <h2>VP of Engineering at Lorem Ipsum</h2>
-        <p>Helping developers be excellent and succeed at building scalable products</p>
-      </div>
+<Main>
+  <div class="flex items-start flex-wrap pt-4 pr-0 pb-3 pl-0">
+    <Image class="rounded-full mt-0 mr-8 mb-4 ml-0" src={profilePicture} alt={'profile pic'} height={100} width={100} format="webp" />
+    <div class="flex-grow flex-shrink-0">
+      <h1>Frau Katerina</h1>
+      <h2>VP of Engineering at Lorem Ipsum</h2>
+      <p>Helping developers be excellent and succeed at building scalable products</p>
     </div>
-	</body>
-</html>
+  </div>
+</Main>
+    

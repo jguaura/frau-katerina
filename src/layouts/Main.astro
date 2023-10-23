@@ -1,0 +1,31 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Frau Katerina website">
+		<title>Astro</title>
+	</head>
+	<body>
+    <main class="max-w-[40rem] m-auto">
+      <slot />
+    </main>
+	</body>
+</html>
+
+<style is:global>
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  h1 + h2 {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 400;
+  }
+</style>
