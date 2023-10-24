@@ -1,0 +1,11 @@
+---
+interface Props {
+  label: string;
+  link: string;
+}
+const { label, link } = Astro.props
+---
+
+<li class="opacity-80 text-sm">
+  <a class="py-2 px-1 rounded-[10px]" href={link}>{label}</a>
+</li>
